@@ -60,6 +60,10 @@ function unknownCommand(c){
   console.log('unknown command: "'+c.trim()+'"')
 }
 
+/**
+ * prints all possible commands for user input
+ * It is supposed to run when the user enters 'help'
+ */
 function help(){
   console.log('All possible commands:\nhello: for printing a welcoming message\nexit or quit: for exiting the app \n')
 }
