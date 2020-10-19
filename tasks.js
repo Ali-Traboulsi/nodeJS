@@ -41,7 +41,7 @@ function onDataReceived(text) {
     hello();
   }
   else if(text === 'help\n'){
-    console.log('All possible commands:\nhello: for printing a welcoming message\nexit or quit: for exiting the app \n')
+    help();
   }
   else{
     unknownCommand(text);
@@ -60,6 +60,9 @@ function unknownCommand(c){
   console.log('unknown command: "'+c.trim()+'"')
 }
 
+function help(){
+  console.log('All possible commands:\nhello: for printing a welcoming message\nexit or quit: for exiting the app \n')
+}
 
 /**
  * Says hello
